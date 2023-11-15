@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh; /* Change to 100vh */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Change to align-items */
+}
+
+.container {
+  align-self: center;
+  height: 60vw;
+  background-repeat: no-repeat;
+  width: 49rem; /* Change to max-width for responsiveness */
+  border-radius: 1rem;
+  background-image: url("https://images.pexels.com/photos/18820159/pexels-photo-18820159/free-photo-of-winter-mountain.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load");
+  background-size: cover;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  animation: gallery infinite linear 20s;
+}
+@keyframes gallery {
+  20% {
+    background-image: url("https://images.pexels.com/photos/18983602/pexels-photo-18983602/free-photo-of-a-group-of-people-standing-in-a-bar.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load");
+  }
+  40% {
+    background-image: url("https://images.pexels.com/photos/18510651/pexels-photo-18510651/free-photo-of-flowers-in-a-meadow-in-summer.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load");
+  }
+  60% {
+    background-image: url("https://images.pexels.com/photos/18979388/pexels-photo-18979388/free-photo-of-slope-of-a-snow-covered-mountain-with-peaks-hidden-in-the-cloud.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load");
+  }
+  80% {
+    background-image: url("https://images.pexels.com/photos/11531570/pexels-photo-11531570.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load");
+  }
+  100% {
+    background-image: url("https://images.pexels.com/photos/1066712/pexels-photo-1066712.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load");
+  }
+}
